@@ -9,14 +9,14 @@ $navbarBackground: white;
 @import 'bootstrap';	
 
 body {
-	padding-top: 60px;
+	background: #F6F5F2;
+	padding-top: 150px;
 }
 
 @import 'bootstrap-responsive';
 
 .navbar-inner {
-	@include box-shadow(none !important);
-	border: none;
+
 }
 .footer {
 	float: left;
@@ -35,23 +35,52 @@ img.idex-images {
 /* Required for jQuery Masonry */
 .box {
 	margin: 5px;
-	padding: 5px;
 	font-size: 12px;
 	line-height: 1.4em;
 	float: left;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	box-shadow: 1px 1px 10px #444;
+	-webkit-box-shadow: 1px 1px 2px 0 #D0D0D0;
+	-moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+	box-shadow: 1px 1px 2px 0 #D0D0D0;
 	width: 214px;
+	border: 1px solid #CCC;
+	border-color: #E4E4E4 #BEBEBD #BEBEBD #E4E4E4;
 }
 .box img {
 	display: block;
 	width: 100%;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
 }
 .description {
 	margin: 10px 0 5px;
+	font-size: 16px;
+	line-height: 150%;
+}
+p {
+	padding: 0 10px;
+}
+.brand {
+	position: absolute;
+	left: 50%;
+	margin-left: -40px !important;
+	width: 80px;
+	top: 10px;
+	z-index: 3000;
+	-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+	background: white;
+	border-radius: 70px;
+	padding: 20px !important;
+	height: 80px;
+	border: 1px solid #E0E0E0;
+}
+/*.navbar-inner{
+	height: 100px !important;
+}*/
+.navbar .nav > li > a {
+padding: 25px 15px;
+}
+@media (max-width: 979px) {
+.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+	padding: 5px 15px;
+}
 }
